@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="description" content="HTML5 sample" />
+	<meta name="keywords" content="keyword1, keyword2" />
+	<title>Julia Romanowska</title>
+	<link rel="stylesheet" href="w3.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body class="w3-white">
+<header>
+<div class="w3-cell-row">
+<div class="w3-container w3-white w3-cell">
+	<a href="index.htm"><h1 class="w3-h1">Julia Romanowska</h1></a>
+</div>
+<div class="w3-container w3-white w3-cell">
+	<div class="w3-dropdown-hover w3-right">
+		<button class="w3-button w3-white"><i class="fa fa-bars"></i></button>
+		<div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+			<a href="work.htm" class="w3-bar-item w3-button">Work</a>
+			<a href="about.htm" class="w3-bar-item w3-button">About Me</a>
+			<a href="work.htm" class="w3-bar-item w3-button">Contact</a>
+		</div>
+	</div>
+</div>
+</header>
+ 	<br>
+	<div class="slideshow-container">
+		<div class="mySlides w3-animate-opacity">
+			<a href="work.htm"><img src="images/1_The School of Duality.png"></a>
+		</div>
+
+		<div class="mySlides w3-animate-opacity">
+			<a href="work.htm"><img src="images/2_Fight_dance.png"></a>
+		</div>
+
+		<div class="mySlides w3-animate-opacity">
+			<a href="work.htm"><img src="images/3_Layers_of_Light_2017.png"></a>
+		</div>
+		
+		<div class="mySlides w3-animate-opacity">
+			<a href="work.htm"><img src="images/4_installation_location_6.png"></a>
+		</div>
+		
+		<div class="mySlides w3-animate-opacity">
+			<a href="work.htm"><img src="images/5_talk_flight_club.png"></a>
+		</div>
+		
+	</div>
+	<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<aside>
+</aside>
+<br>
+<footer class="w3-margin-top w3-padding-small">
+	Made by Lyubo Julia Romanowska &copy; 2019
+</footer>
+</body>
+</html>
